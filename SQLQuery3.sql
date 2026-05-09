@@ -27,9 +27,15 @@ CREATE TABLE Dim_Orders (
     CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES Dim_Customer(customer_id)
 );
 
+CREATE TABLE Dim_Category_Translation (
+    product_category_name VARCHAR(100) PRIMARY KEY,
+    product_category_name_english VARCHAR(100)
+);
 CREATE TABLE Dim_Product (
     product_id VARCHAR(50) PRIMARY KEY,
-    product_category_name VARCHAR(100) -- Removed the extra comma here
+    product_category_name VARCHAR(100), -- Removed the extra comma here
+	CONSTRAINT fk_translator_languagage FOREIGN KEY (product_category_name) REFERENCES  Dim_Category_Translation(product_category_name)
+
 );
 
 CREATE TABLE Dim_Sellers (
@@ -39,10 +45,6 @@ CREATE TABLE Dim_Sellers (
     CONSTRAINT fk_seller_geo FOREIGN KEY (seller_zip_code_prefix) REFERENCES Dim_Geolocation(zip_code_prefix)
 );
 
-CREATE TABLE Dim_Category_Translation (
-    product_category_name VARCHAR(100) PRIMARY KEY,
-    product_category_name_english VARCHAR(100)
-);
 
 -- FACT TABLES --
 
