@@ -1,4 +1,12 @@
+Create Database Brazilian_DW
+
+USE Brazilian_DW
+
+
+
 -- DIMENSIONS --
+
+
 
 CREATE TABLE Dim_Customer (
     customer_id VARCHAR(50) PRIMARY KEY,

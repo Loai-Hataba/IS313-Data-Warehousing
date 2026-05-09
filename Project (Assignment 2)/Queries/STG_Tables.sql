@@ -4,6 +4,10 @@
 -- All columns are NVARCHAR to absorb raw CSV data without
 -- type errors. No FK constraints, no NOT NULL.
 -- ============================================================
+Create database STG_Brazilian_DW
+
+use STG_Brazilian_DW
+
 
 -- 1. olist_customers_dataset.csv
 CREATE TABLE STG_Customers (
