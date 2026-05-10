@@ -100,3 +100,9 @@ CREATE TABLE STG_CategoryTranslation (
     product_category_name NVARCHAR(100),
     product_category_name_english NVARCHAR(100)
 );
+
+
+
+Use STG_Brazilian_DW
+
+Select * from STG_Customers

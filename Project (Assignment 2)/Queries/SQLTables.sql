@@ -5,6 +5,8 @@ USE Brazilian_DW
 USE master
 Drop database Brazilian_DW
 
+
+
 -- DIMENSIONS --
 
 CREATE TABLE Dim_Customer (
