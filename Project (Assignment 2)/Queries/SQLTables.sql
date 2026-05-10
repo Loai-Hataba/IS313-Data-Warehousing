@@ -2,18 +2,17 @@ Create Database Brazilian_DW
 
 USE Brazilian_DW
 
-
+USE master
+Drop database Brazilian_DW
 
 -- DIMENSIONS --
 
-
-
 CREATE TABLE Dim_Customer (
-    customer_id VARCHAR(50) PRIMARY KEY,
-    customer_unique_id VARCHAR(50),
-    customer_zip_code_prefix VARCHAR(5),
-    customer_city VARCHAR(100),
-    customer_state CHAR(2)
+    customer_id NVARCHAR(50) PRIMARY KEY,
+    customer_unique_id NVARCHAR(50),
+    customer_zip_code_prefix NVARCHAR(5),
+    customer_city NVARCHAR(100),
+    customer_state NCHAR(2)
 );
 
 -- NOTE: zip_code_prefix has duplicates in the source CSV so it cannot be a simple PK.
@@ -21,17 +20,17 @@ CREATE TABLE Dim_Customer (
 -- before loading so each zip appears only once, then you may also keep the surrogate approach.
 CREATE TABLE Dim_Geolocation (
     geo_sk INT IDENTITY(1,1) PRIMARY KEY,
-    zip_code_prefix VARCHAR(5),
+    zip_code_prefix NVARCHAR(5),
     latitude DECIMAL(10, 8),
     longitude DECIMAL(11, 8),
-    city VARCHAR(100),
-    state VARCHAR(2)
+    city NVARCHAR(100),
+    state NVARCHAR(2)
 );
 
 CREATE TABLE Dim_Orders (
-    order_id VARCHAR(50) PRIMARY KEY,
-    customer_id VARCHAR(50),
-    order_status VARCHAR(20),
+    order_id NVARCHAR(50) PRIMARY KEY,
+    customer_id NVARCHAR(50),
+    order_status NVARCHAR(20),
     order_purchase_timestamp DATETIME,
     order_approved_at DATETIME,
     order_delivered_carrier_date DATETIME,
@@ -41,21 +40,21 @@ CREATE TABLE Dim_Orders (
 );
 
 CREATE TABLE Dim_Category_Translation (
-    product_category_name VARCHAR(100) PRIMARY KEY,
-    product_category_name_english VARCHAR(100)
+    product_category_name NVARCHAR(100) PRIMARY KEY,
+    product_category_name_english NVARCHAR(100)
 );
 CREATE TABLE Dim_Product (
-    product_id VARCHAR(50) PRIMARY KEY,
-    product_category_name VARCHAR(100), -- Removed the extra comma here
+    product_id NVARCHAR(50) PRIMARY KEY,
+    product_category_name NVARCHAR(100), -- Removed the extra comma here
 	CONSTRAINT fk_translator_languagage FOREIGN KEY (product_category_name) REFERENCES  Dim_Category_Translation(product_category_name)
 
 );
 
 -- seller_state is intentionally omitted: accessible via JOIN to Dim_Geolocation through seller_zip_code_prefix.
 CREATE TABLE Dim_Sellers (
-    seller_id VARCHAR(50) PRIMARY KEY,
-    seller_zip_code_prefix VARCHAR(5),
-    seller_city VARCHAR(100)
+    seller_id NVARCHAR(50) PRIMARY KEY,
+    seller_zip_code_prefix NVARCHAR(5),
+    seller_city NVARCHAR(100)
     -- FK to Dim_Geolocation removed because geo_sk is a surrogate; join on zip_code_prefix at query time.
 );
 
@@ -64,10 +63,10 @@ CREATE TABLE Dim_Sellers (
 
 CREATE TABLE Fact_Order_Items (
     fact_item_sk INT IDENTITY(1,1) PRIMARY KEY,
-    order_id VARCHAR(50),
+    order_id NVARCHAR(50),
     order_item_id INT, 
-    product_id VARCHAR(50),
-    seller_id VARCHAR(50),
+    product_id NVARCHAR(50),
+    seller_id NVARCHAR(50),
     shipping_limit_date DATETIME,
     price DECIMAL(10, 2),
     freight_value DECIMAL(10, 2),
@@ -80,9 +79,9 @@ CREATE TABLE Fact_Order_Items (
 -- It is derived in SSIS via a Lookup on Dim_Orders (order_id -> order_purchase_timestamp).
 CREATE TABLE Fact_Payments (
     fact_payment_sk INT IDENTITY(1,1) PRIMARY KEY,
-    order_id VARCHAR(50),
+    order_id NVARCHAR(50),
     payment_sequential INT,
-    payment_type VARCHAR(20),
+    payment_type NVARCHAR(30),
     payment_installments INT,
     payment_value DECIMAL(10, 2),
     payment_date DATETIME,
@@ -91,8 +90,23 @@ CREATE TABLE Fact_Payments (
 
 CREATE TABLE Fact_Reviews (
     fact_review_sk INT IDENTITY(1,1) PRIMARY KEY,
-    order_id VARCHAR(50),
+    order_id NVARCHAR(50),
     review_score INT,
     review_creation_date DATETIME,
     CONSTRAINT fk_reviews_order FOREIGN KEY (order_id) REFERENCES Dim_Orders(order_id)
 );
+
+
+use Brazilian_DW
+
+SELECT 'Dim_Customer' AS tbl, COUNT(*) AS cnt FROM Dim_Customer UNION ALL
+SELECT 'Dim_Geolocation', COUNT(*) FROM Dim_Geolocation UNION ALL
+SELECT 'Dim_Orders', COUNT(*) FROM Dim_Orders UNION ALL
+SELECT 'Fact_Order_Items', COUNT(*) FROM Fact_Order_Items UNION ALL
+SELECT 'Fact_Payments', COUNT(*) FROM Fact_Payments UNION ALL
+SELECT 'Fact_Reviews', COUNT(*) FROM Fact_Reviews;
+
+
+SELECT 'Dim_Product' AS tbl, COUNT(*) AS cnt FROM Dim_Product UNION ALL
+SELECT 'Dim_Sellers', COUNT(*) FROM Dim_Sellers UNION ALL
+SELECT 'Dim_Category_Translation', COUNT(*) FROM Dim_Category_Translation;
