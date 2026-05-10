@@ -8,11 +8,15 @@ Drop database Brazilian_DW
 -- DIMENSIONS --
 
 CREATE TABLE Dim_Customer (
-    customer_id NVARCHAR(50) PRIMARY KEY,
-    customer_unique_id NVARCHAR(50),
+    customer_sk              INT IDENTITY(1,1) PRIMARY KEY,  -- surrogate key
+    customer_id              NVARCHAR(50)  NOT NULL,          -- natural key (not unique: multiple versions)
+    customer_unique_id       NVARCHAR(50),
     customer_zip_code_prefix NVARCHAR(5),
-    customer_city NVARCHAR(100),
-    customer_state NCHAR(2)
+    customer_city            NVARCHAR(100),
+    customer_state           NCHAR(2),
+    effective_start_date     DATETIME      NOT NULL,
+    effective_end_date       DATETIME      NULL,              -- NULL = current/active record
+    is_current               BIT           NOT NULL DEFAULT 1
 );
 
 -- NOTE: zip_code_prefix has duplicates in the source CSV so it cannot be a simple PK.
@@ -28,15 +32,15 @@ CREATE TABLE Dim_Geolocation (
 );
 
 CREATE TABLE Dim_Orders (
-    order_id NVARCHAR(50) PRIMARY KEY,
-    customer_id NVARCHAR(50),
-    order_status NVARCHAR(20),
-    order_purchase_timestamp DATETIME,
-    order_approved_at DATETIME,
-    order_delivered_carrier_date DATETIME,
+    order_id                      NVARCHAR(50) PRIMARY KEY,
+    customer_sk                   INT,                         -- references surrogate key in Dim_Customer
+    order_status                  NVARCHAR(20),
+    order_purchase_timestamp      DATETIME,
+    order_approved_at             DATETIME,
+    order_delivered_carrier_date  DATETIME,
     order_delivered_customer_date DATETIME,
     order_estimated_delivery_date DATETIME,
-    CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES Dim_Customer(customer_id)
+    CONSTRAINT fk_customer FOREIGN KEY (customer_sk) REFERENCES Dim_Customer(customer_sk)
 );
 
 CREATE TABLE Dim_Category_Translation (
@@ -110,3 +114,22 @@ SELECT 'Fact_Reviews', COUNT(*) FROM Fact_Reviews;
 SELECT 'Dim_Product' AS tbl, COUNT(*) AS cnt FROM Dim_Product UNION ALL
 SELECT 'Dim_Sellers', COUNT(*) FROM Dim_Sellers UNION ALL
 SELECT 'Dim_Category_Translation', COUNT(*) FROM Dim_Category_Translation;
+
+
+-- ============================================================
+-- ETL CONTROL (WATERMARK) TABLE
+-- Stores the last successful load timestamp per target table.
+-- Used by Load_DW package for incremental extraction.
+-- Seeded with epoch date so first run loads everything.
+-- ============================================================
+
+CREATE TABLE ETL_Control (
+    table_name          NVARCHAR(100) PRIMARY KEY,
+    last_load_timestamp DATETIME      NOT NULL DEFAULT '1900-01-01'
+);
+
+INSERT INTO ETL_Control (table_name, last_load_timestamp) VALUES
+('Dim_Orders',       '1900-01-01'),
+('Fact_Order_Items', '1900-01-01'),
+('Fact_Payments',    '1900-01-01'),
+('Fact_Reviews',     '1900-01-01');
