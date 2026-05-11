@@ -1,0 +1,87 @@
+SSIS package "C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Brazilian_Datawarehouse_Project\Load_DW.dtsx" starting.
+Information: 0x4004300A at Load Dim_CategoryTranslation, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Dim_Customer, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Dim_Geolocation, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Dim_Orders, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Dim_Products, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Dim_Sellers, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Fact_OrderItems, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Fact_Payments, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Fact_Reviews, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Dim_CategoryTranslation, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Dim_Geolocation, SSIS.Pipeline: Validation phase is beginning.
+Warning: 0x80049304 at Load Dim_Geolocation, SSIS.Pipeline: Warning: Could not open global shared memory to communicate with performance DLL; data flow performance counters are not available.  To resolve, run this package as an administrator, or on the system's console.
+Warning: 0x80047076 at Load Dim_Geolocation, SSIS.Pipeline: The output column "zip_code_prefix_str" (16) on output "Data Conversion Output" (9) and component "Data Conversion" (2) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Geolocation, SSIS.Pipeline: The output column "city_str" (19) on output "Data Conversion Output" (9) and component "Data Conversion" (2) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Geolocation, SSIS.Pipeline: The output column "state_str" (22) on output "Data Conversion Output" (9) and component "Data Conversion" (2) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Information: 0x40043006 at Load Dim_Geolocation, SSIS.Pipeline: Prepare for Execute phase is beginning.
+Information: 0x40043007 at Load Dim_Geolocation, SSIS.Pipeline: Pre-Execute phase is beginning.
+Information: 0x4004300C at Load Dim_Geolocation, SSIS.Pipeline: Execute phase is beginning.
+Information: 0x402090DF at Load Dim_Geolocation, OLE DB Destination [28]: The final commit for the data insertion in "OLE DB Destination" has started.
+Information: 0x402090E0 at Load Dim_Geolocation, OLE DB Destination [28]: The final commit for the data insertion  in "OLE DB Destination" has ended.
+Information: 0x40043008 at Load Dim_Geolocation, SSIS.Pipeline: Post Execute phase is beginning.
+Information: 0x4004300B at Load Dim_Geolocation, SSIS.Pipeline: "OLE DB Destination" wrote 19015 rows.
+Information: 0x40043009 at Load Dim_Geolocation, SSIS.Pipeline: Cleanup phase is beginning.
+Information: 0x4004300A at Load Dim_Customer, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x4004300A at Load Dim_Sellers, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x40043006 at Load Dim_CategoryTranslation, SSIS.Pipeline: Prepare for Execute phase is beginning.
+Information: 0x40043007 at Load Dim_CategoryTranslation, SSIS.Pipeline: Pre-Execute phase is beginning.
+Warning: 0x80047076 at Load Dim_Sellers, SSIS.Pipeline: The output column "seller_state" (40) on output "OLE DB Source Output" (36) and component "OLE DB Source" (25) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Information: 0x40043006 at Load Dim_Sellers, SSIS.Pipeline: Prepare for Execute phase is beginning.
+Information: 0x40043007 at Load Dim_Sellers, SSIS.Pipeline: Pre-Execute phase is beginning.
+Information: 0x4004300C at Load Dim_Sellers, SSIS.Pipeline: Execute phase is beginning.
+Warning: 0x80047076 at Load Dim_Customer, SSIS.Pipeline: The output column "effective_start_date" (182) on output "Derived Column Output" (181) and component "start date and is current" (179) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Customer, SSIS.Pipeline: The output column "is_current" (185) on output "Derived Column Output" (181) and component "start date and is current" (179) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Customer, SSIS.Pipeline: The output column "lkp_zip" (247) on output "Union All Output 1" (241) and component "Union All" (218) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Customer, SSIS.Pipeline: The output column "lkp_city" (248) on output "Union All Output 1" (241) and component "Union All" (218) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Customer, SSIS.Pipeline: The output column "lkp_state" (249) on output "Union All Output 1" (241) and component "Union All" (218) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Information: 0x40043006 at Load Dim_Customer, SSIS.Pipeline: Prepare for Execute phase is beginning.
+Information: 0x402090DF at Load Dim_Sellers, OLE DB Destination [2]: The final commit for the data insertion in "OLE DB Destination" has started.
+Information: 0x402090E0 at Load Dim_Sellers, OLE DB Destination [2]: The final commit for the data insertion  in "OLE DB Destination" has ended.
+Information: 0x40043008 at Load Dim_Sellers, SSIS.Pipeline: Post Execute phase is beginning.
+Information: 0x4004300C at Load Dim_CategoryTranslation, SSIS.Pipeline: Execute phase is beginning.
+Information: 0x402090DF at Load Dim_CategoryTranslation, OLE DB Destination [2]: The final commit for the data insertion in "OLE DB Destination" has started.
+Information: 0x402090E0 at Load Dim_CategoryTranslation, OLE DB Destination [2]: The final commit for the data insertion  in "OLE DB Destination" has ended.
+Information: 0x40043008 at Load Dim_CategoryTranslation, SSIS.Pipeline: Post Execute phase is beginning.
+Information: 0x4004300B at Load Dim_Sellers, SSIS.Pipeline: "OLE DB Destination" wrote 3095 rows.
+Information: 0x40043009 at Load Dim_Sellers, SSIS.Pipeline: Cleanup phase is beginning.
+Information: 0x4004300B at Load Dim_CategoryTranslation, SSIS.Pipeline: "OLE DB Destination" wrote 71 rows.
+Information: 0x40043009 at Load Dim_CategoryTranslation, SSIS.Pipeline: Cleanup phase is beginning.
+Information: 0x4004300A at Load Dim_Products, SSIS.Pipeline: Validation phase is beginning.
+Information: 0x40043007 at Load Dim_Customer, SSIS.Pipeline: Pre-Execute phase is beginning.
+Warning: 0x80047076 at Load Dim_Products, SSIS.Pipeline: The output column "product_name_lenght" (69) on output "OLE DB Source Output" (66) and component "OLE DB Source" (55) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Products, SSIS.Pipeline: The output column "product_description_lenght" (70) on output "OLE DB Source Output" (66) and component "OLE DB Source" (55) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Products, SSIS.Pipeline: The output column "product_photos_qty" (71) on output "OLE DB Source Output" (66) and component "OLE DB Source" (55) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Products, SSIS.Pipeline: The output column "product_weight_g" (72) on output "OLE DB Source Output" (66) and component "OLE DB Source" (55) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Products, SSIS.Pipeline: The output column "product_length_cm" (73) on output "OLE DB Source Output" (66) and component "OLE DB Source" (55) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Products, SSIS.Pipeline: The output column "product_height_cm" (74) on output "OLE DB Source Output" (66) and component "OLE DB Source" (55) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Warning: 0x80047076 at Load Dim_Products, SSIS.Pipeline: The output column "product_width_cm" (75) on output "OLE DB Source Output" (66) and component "OLE DB Source" (55) is not subsequently used in the Data Flow task. Removing this unused output column can increase Data Flow task performance.
+Information: 0x40043006 at Load Dim_Products, SSIS.Pipeline: Prepare for Execute phase is beginning.
+Information: 0x400490F4 at Load Dim_Customer, Lookup [43]: Lookup has cached 0 rows.
+Information: 0x400490F5 at Load Dim_Customer, Lookup [43]: Lookup has cached a total of 0 rows.
+Information: 0x40209340 at Load Dim_Customer, Lookup [43]: The number of unique rows added to the cache is 0.
+Information: 0x402090E2 at Load Dim_Customer, Lookup [43]: The Lookup processed 0 rows in the cache. The processing time was 0.016 seconds. The cache used 0 bytes of memory.
+Information: 0x402090DC at Load Dim_Customer, Flat File Destination [19]: The processing of file "D:\university\year3term2\assignmentTerm2\DataWarehouse\ass2\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\test2.txt" has started.
+Warning: 0x80070003 at Load Dim_Customer, Flat File Destination [19]: The system cannot find the path specified.
+Error: 0xC020200E at Load Dim_Customer, Flat File Destination [19]: Cannot open the datafile "D:\university\year3term2\assignmentTerm2\DataWarehouse\ass2\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\test2.txt".
+Error: 0xC004701A at Load Dim_Customer, SSIS.Pipeline: Flat File Destination failed the pre-execute phase and returned error code 0xC020200E.
+Information: 0x40043008 at Load Dim_Customer, SSIS.Pipeline: Post Execute phase is beginning.
+Information: 0x40043007 at Load Dim_Products, SSIS.Pipeline: Pre-Execute phase is beginning.
+Information: 0x402090DD at Load Dim_Customer, Flat File Destination [19]: The processing of file "D:\university\year3term2\assignmentTerm2\DataWarehouse\ass2\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\test2.txt" has ended.
+Information: 0x4004300B at Load Dim_Customer, SSIS.Pipeline: "Flat File Destination" wrote 0 rows.
+Information: 0x4004300B at Load Dim_Customer, SSIS.Pipeline: "OLE DB Destination" wrote 0 rows.
+Information: 0x4004300B at Load Dim_Customer, SSIS.Pipeline: "OLE DB Destination 1" wrote 0 rows.
+Information: 0x40043009 at Load Dim_Customer, SSIS.Pipeline: Cleanup phase is beginning.
+Task failed: Load Dim_Customer
+Warning: 0x80019002 at Load_DW: SSIS Warning Code DTS_W_MAXIMUMERRORCOUNTREACHED.  The Execution method succeeded, but the number of errors raised (2) reached the maximum allowed (1); resulting in failure. This occurs when the number of errors reaches the number specified in MaximumErrorCount. Change the MaximumErrorCount or fix the errors.
+Information: 0x400490F4 at Load Dim_Products, Lookup [11]: Lookup has cached 71 rows.
+Information: 0x400490F5 at Load Dim_Products, Lookup [11]: Lookup has cached a total of 71 rows.
+Information: 0x40209340 at Load Dim_Products, Lookup [11]: The number of unique rows added to the cache is 71.
+Information: 0x402090E2 at Load Dim_Products, Lookup [11]: The Lookup processed 71 rows in the cache. The processing time was 0.015 seconds. The cache used 16898 bytes of memory.
+Information: 0x4004300C at Load Dim_Products, SSIS.Pipeline: Execute phase is beginning.
+Information: 0x402090DF at Load Dim_Products, OLE DB Destination [34]: The final commit for the data insertion in "OLE DB Destination" has started.
+Information: 0x402090E0 at Load Dim_Products, OLE DB Destination [34]: The final commit for the data insertion  in "OLE DB Destination" has ended.
+Information: 0x40043008 at Load Dim_Products, SSIS.Pipeline: Post Execute phase is beginning.
+Information: 0x4004300B at Load Dim_Products, SSIS.Pipeline: "OLE DB Destination" wrote 32951 rows.
+Information: 0x40043009 at Load Dim_Products, SSIS.Pipeline: Cleanup phase is beginning.
+SSIS package "C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Brazilian_Datawarehouse_Project\Load_DW.dtsx" finished: Failure.
