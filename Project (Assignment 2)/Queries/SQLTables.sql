@@ -135,3 +135,10 @@ INSERT INTO ETL_Control (table_name, last_load_timestamp) VALUES
 ('Fact_Order_Items', '1900-01-01'),
 ('Fact_Payments',    '1900-01-01'),
 ('Fact_Reviews',     '1900-01-01');
+
+-- 2 product categories present in olist_products_dataset.csv but missing from
+-- product_category_name_translation.csv -- must exist in Dim_Category_Translation
+-- before Dim_Product can be loaded (FK constraint fk_translator_languagage).
+INSERT INTO Dim_Category_Translation (product_category_name, product_category_name_english) VALUES
+('pc_gamer',                                       'pc_gamer'),
+('portateis_cozinha_e_preparadores_de_alimentos',  'portable_kitchen_and_food_preparers');

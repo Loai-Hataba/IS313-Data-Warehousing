@@ -11,8 +11,8 @@
   DTS:LocaleID="19465"
   DTS:ObjectName="Load_STG"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{C79A3D68-E6DA-4AD7-BE98-153BC1CEC37C}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{75057BEC-AC5C-45B5-8EC5-2392A3FD73CB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LOAI-PAVILLION\SQLEXPRESS01;Initial Catalog=Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_STG-{12DC5278-8F06-4970-A38E-43512E004BF9}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;" />
+          DTS:ConnectionString="Data Source=.;Initial Catalog=Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_STG-{12DC5278-8F06-4970-A38E-43512E004BF9}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -42,7 +42,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\product_category_name_translation.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\product_category_name_translation.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -51,7 +51,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="product_category_name"
-              DTS:DTSID="{57358F6B-3092-4045-9367-0B5C1CB09C38}"
+              DTS:DTSID="{EA99CA26-F517-43D2-987D-08CF479C35D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -60,7 +60,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="product_category_name_english"
-              DTS:DTSID="{5CCF7EE8-0457-4ACB-A9D4-03B4AD0930A1}"
+              DTS:DTSID="{57C59DFF-0360-463B-B38C-8831E32CEE40}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\olist_customers_dataset.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_customers_dataset.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -89,7 +89,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;customer_id&quot;"
-              DTS:DTSID="{5F20A58E-F624-4B40-8855-F27D0AC61D17}"
+              DTS:DTSID="{16B9EC6A-57CA-4AB5-9733-CEC6C3D0E5B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -98,7 +98,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;customer_unique_id&quot;"
-              DTS:DTSID="{CD62AFE9-AE49-4A98-8CA4-AA0176ADDEED}"
+              DTS:DTSID="{82C3F3EB-782E-4657-BAA5-07DA7F45D420}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -107,7 +107,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;customer_zip_code_prefix&quot;"
-              DTS:DTSID="{D3933468-2E75-4410-AE82-64B9EBD2384F}"
+              DTS:DTSID="{4B33AFA4-6DB0-49D5-9B9D-C32D86DCEF90}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -116,7 +116,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;customer_city&quot;"
-              DTS:DTSID="{A8B09AC1-0725-4E0E-AD96-605877A0F243}"
+              DTS:DTSID="{49AB8A08-B75B-4CE4-8085-489EB5DD4B05}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -125,7 +125,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;customer_state&quot;"
-              DTS:DTSID="{7000F0AD-2A01-4D54-816F-62A8B868F63E}"
+              DTS:DTSID="{33C15E47-D1E1-4F2B-8374-08E806BB647C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -145,7 +145,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\olist_geolocation_dataset.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_geolocation_dataset.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -154,7 +154,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;geolocation_zip_code_prefix&quot;"
-              DTS:DTSID="{2BA608AC-ED6B-4A84-B31E-BDAAFAFED9E9}"
+              DTS:DTSID="{F5656606-5DCA-4B12-BE31-31B8C31BBBAB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -163,7 +163,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;geolocation_lat&quot;"
-              DTS:DTSID="{9407BB35-696F-45E2-959E-A9C7B86FFB49}"
+              DTS:DTSID="{04F2E13F-5D65-4A2E-8CCF-364CDF7E8114}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -172,7 +172,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;geolocation_lng&quot;"
-              DTS:DTSID="{2BBD528E-9613-4557-9544-315A7980B372}"
+              DTS:DTSID="{EC9EA844-B7E0-4E03-9674-FFC3CA7B3C59}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -181,7 +181,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;geolocation_city&quot;"
-              DTS:DTSID="{D071C7D7-C7CD-4FF1-BD28-5A3F0E1DF3DC}"
+              DTS:DTSID="{4BDE7423-2391-43BF-8BCE-1B3416DE95D1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -190,7 +190,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;geolocation_state&quot;"
-              DTS:DTSID="{EF52697F-6293-4B40-87B1-52E3F807E594}"
+              DTS:DTSID="{7E03BEA8-864F-45DD-B179-2AB306F5B83B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -210,7 +210,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\olist_order_items_dataset.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_order_items_dataset.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -219,7 +219,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_id&quot;"
-              DTS:DTSID="{B235A695-12BD-43E7-9E15-182A31C69FD8}"
+              DTS:DTSID="{DF46EFDA-B9D3-4525-813D-AD1E663D2D75}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -228,7 +228,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_item_id&quot;"
-              DTS:DTSID="{A0D669E8-7EC9-4F77-A67A-8DEBAC6B0EB1}"
+              DTS:DTSID="{CB1AB132-700D-4E02-9787-78DCB6B969DE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -237,7 +237,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_id&quot;"
-              DTS:DTSID="{96651FB3-DFFC-4DC9-88B3-B41E1F86A20D}"
+              DTS:DTSID="{99AF5FDF-3A07-4B3E-A33E-27F4F5D95BBB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -246,7 +246,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;seller_id&quot;"
-              DTS:DTSID="{08BAA5D9-185E-4B2E-BDA3-E3390F672C2E}"
+              DTS:DTSID="{18C14EDD-1D1D-4628-B12F-F4F932535729}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -255,7 +255,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;shipping_limit_date&quot;"
-              DTS:DTSID="{4E631B84-187D-4E97-BD05-E56D225C0923}"
+              DTS:DTSID="{E5F14CC8-3CEF-407B-9321-77B76ED173FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -264,7 +264,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;price&quot;"
-              DTS:DTSID="{A969E0C8-78C5-4907-B74C-E4C1BAA7FCE7}"
+              DTS:DTSID="{E9CC5F89-E429-4DE6-B669-84F633A9199F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -273,7 +273,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;freight_value&quot;"
-              DTS:DTSID="{B59D881B-3F2E-4875-890C-6EAEA0D5CFD2}"
+              DTS:DTSID="{687158FA-F8C7-420B-B548-63DAA9E6DCC8}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -293,7 +293,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\olist_order_payments_dataset.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_order_payments_dataset.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -302,7 +302,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_id&quot;"
-              DTS:DTSID="{CBF76668-CED3-446E-AC26-313AD9A566AD}"
+              DTS:DTSID="{22CEB0F5-59EB-49B4-85BA-0E2CA3AC353A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -311,7 +311,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;payment_sequential&quot;"
-              DTS:DTSID="{8EFDABE7-E708-405B-ABCA-95F9DE235A11}"
+              DTS:DTSID="{E017E94E-D41D-4D01-8084-FFFCA815DEE9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -320,7 +320,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;payment_type&quot;"
-              DTS:DTSID="{1C5A574F-AD4A-4C6F-BA22-EA695F2D7634}"
+              DTS:DTSID="{AF3B92FB-D47A-4B40-B338-58DB81FDF09F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -329,7 +329,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;payment_installments&quot;"
-              DTS:DTSID="{EA1DF608-6EAB-4716-B82C-C1C4523BF308}"
+              DTS:DTSID="{DCA588EE-71F6-470E-B92F-AA5ABF239516}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +338,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;payment_value&quot;"
-              DTS:DTSID="{7D17BB1C-1F50-475C-B7E5-6377AB64C1DB}"
+              DTS:DTSID="{C591DFB1-D80D-4708-B84F-F7C31FF1B13A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -358,7 +358,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\olist_order_reviews_dataset.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_order_reviews_dataset.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -367,7 +367,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;review_id&quot;"
-              DTS:DTSID="{3A10E263-C398-4CF4-A191-C66CB2A2EF23}"
+              DTS:DTSID="{B9858781-35D0-4D9C-923F-A33C67B1CDA2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -376,7 +376,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_id&quot;"
-              DTS:DTSID="{1E1D51AE-3490-475E-9B9E-B428C3D0FB8B}"
+              DTS:DTSID="{A022347C-B86F-4189-8080-481A5B148BB5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -385,7 +385,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;review_score&quot;"
-              DTS:DTSID="{22FBF131-1AFB-4F8C-AB56-008EEB163FB0}"
+              DTS:DTSID="{9A0CE880-E206-4E0D-B5B1-A6410FDB53ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -394,7 +394,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;review_comment_title&quot;"
-              DTS:DTSID="{1D4547B4-F66F-4E97-AF9C-8DC1709DEE2C}"
+              DTS:DTSID="{AA4A2012-92B4-436C-9225-63D38493E87A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -403,7 +403,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;review_comment_message&quot;"
-              DTS:DTSID="{AE035430-41E7-48A1-B5B2-19F7894D4B7E}"
+              DTS:DTSID="{D28FE4E9-6DAE-4954-B6ED-5DC453B6DF0E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -412,7 +412,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;review_creation_date&quot;"
-              DTS:DTSID="{234185C1-9284-42FB-AD86-8A7BEC492E0C}"
+              DTS:DTSID="{2873E855-65DA-47E5-941D-0809C1116989}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -421,7 +421,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;review_answer_timestamp&quot;"
-              DTS:DTSID="{02C2EFBD-3116-418C-99DB-3F6EC8BEB43F}"
+              DTS:DTSID="{D7D64989-B949-4893-9583-0F54D188CC4E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -441,7 +441,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\olist_orders_dataset.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_orders_dataset.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -450,7 +450,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_id&quot;"
-              DTS:DTSID="{190942B1-87CD-4759-ABA2-96181C0CE613}"
+              DTS:DTSID="{A3E19634-3F24-48D4-ABA7-20D1A0D3BECB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -459,7 +459,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;customer_id&quot;"
-              DTS:DTSID="{06F3D101-040E-4A51-958F-FB1D216F6709}"
+              DTS:DTSID="{4761EE0D-0092-4848-BB24-D8EDB9E1F47B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -468,7 +468,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_status&quot;"
-              DTS:DTSID="{150F04A8-E737-4ECA-B18F-AC51AA4386F7}"
+              DTS:DTSID="{C3788F16-E611-475E-A236-FB4B922C10D8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -477,7 +477,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_purchase_timestamp&quot;"
-              DTS:DTSID="{E437F3D7-41B3-4B83-8BF5-53F08CE903FB}"
+              DTS:DTSID="{AD52217D-065D-4170-9331-4417C7286498}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -486,7 +486,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_approved_at&quot;"
-              DTS:DTSID="{FCDE5FD7-63A3-406D-9317-D5BAE4963A44}"
+              DTS:DTSID="{FAC5FFC4-7232-447B-B808-5D7D0850FE8E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -495,7 +495,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_delivered_carrier_date&quot;"
-              DTS:DTSID="{EE44742A-9F2E-4DB4-907D-B5BBD6421567}"
+              DTS:DTSID="{257007F2-4AD4-4C2C-A84E-822B7FF69A71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -504,7 +504,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_delivered_customer_date&quot;"
-              DTS:DTSID="{23B839B2-9BEA-4083-8715-39F7CFEDDD4A}"
+              DTS:DTSID="{D6C55445-E63C-4719-8B8E-085818C36C6E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -513,7 +513,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;order_estimated_delivery_date&quot;"
-              DTS:DTSID="{DB091D5D-8183-4ECB-BFC5-F8D9D50D5B3D}"
+              DTS:DTSID="{F9B34AAC-8A3D-43E8-8003-BC655927E0F9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -533,7 +533,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\olist_products_dataset.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_products_dataset.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -542,7 +542,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_id&quot;"
-              DTS:DTSID="{4CF22155-62F3-4E1C-8FF8-86891F05CD21}"
+              DTS:DTSID="{89A8D01F-8B13-4E94-A9B1-813259971235}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -551,7 +551,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_category_name&quot;"
-              DTS:DTSID="{51AFD8F0-927A-475C-9DC5-B7C5B1BBBBEE}"
+              DTS:DTSID="{1FB9988C-FDBF-40F4-8186-BC001758E5CA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -560,7 +560,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_name_lenght&quot;"
-              DTS:DTSID="{258F4A3B-AA02-4AAA-83A0-DE6EB9786C2E}"
+              DTS:DTSID="{C2F349F4-116B-4491-946F-2228915B090A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -569,7 +569,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_description_lenght&quot;"
-              DTS:DTSID="{D26ABFC2-B53E-4FDB-860B-28AFC1D4F0C3}"
+              DTS:DTSID="{A3A17BCB-4E99-4FE3-820C-B393BD0B66F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -578,7 +578,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_photos_qty&quot;"
-              DTS:DTSID="{63A96A80-87CF-43B7-A29B-8BCF46CB1020}"
+              DTS:DTSID="{E5BF0364-53BA-44C3-BE21-18AD0D79782B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -587,7 +587,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_weight_g&quot;"
-              DTS:DTSID="{5825985E-A2BA-4E23-B215-2DD6BD9C0FFC}"
+              DTS:DTSID="{A2B58E2D-4D08-4C78-AA3C-2405709E5385}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -596,7 +596,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_length_cm&quot;"
-              DTS:DTSID="{FACCB128-DEF9-472C-B537-BEA24301BAE0}"
+              DTS:DTSID="{BCDA9961-6E5E-4729-AADD-736484D8683B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -605,7 +605,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_height_cm&quot;"
-              DTS:DTSID="{EA75851F-0D03-4848-BBEF-8B25CC55C666}"
+              DTS:DTSID="{7E7FF3F1-CDD0-4062-B7B4-8C2BA4C792D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -614,7 +614,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;product_width_cm&quot;"
-              DTS:DTSID="{D1EFB26A-40C1-4C28-A48E-56EE3344E5E1}"
+              DTS:DTSID="{F5DACF25-00CF-4636-96E6-A4503E2ED4DE}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -634,7 +634,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Datasets\olist_sellers_dataset.csv">
+          DTS:ConnectionString="C:\Users\abdal\Downloads\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_sellers_dataset.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -643,7 +643,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;seller_id&quot;"
-              DTS:DTSID="{1620C840-A386-4BD7-9C8A-EFCB720BA368}"
+              DTS:DTSID="{056E7CF6-A47F-415E-B05D-98E45C430746}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -652,7 +652,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;seller_zip_code_prefix&quot;"
-              DTS:DTSID="{003B19A9-F142-4115-9F72-733B1E9257B1}"
+              DTS:DTSID="{51FA357F-9941-4CEA-B618-959352DF413A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -661,7 +661,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;seller_city&quot;"
-              DTS:DTSID="{427A0D15-D235-462B-88CE-C08531D29712}"
+              DTS:DTSID="{069DC15A-3A9C-4905-90A4-63655EED53AC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -670,7 +670,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="&quot;seller_state&quot;"
-              DTS:DTSID="{AFB5B162-097C-43DE-83F7-03EE1500E4C3}"
+              DTS:DTSID="{250125BC-11E5-4946-8587-C6E3E8703A1F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -685,7 +685,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LOAI-PAVILLION\SQLEXPRESS01;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_STG-{456A8152-083C-46D1-B59A-BDD474DD8969}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;" />
+          DTS:ConnectionString="Data Source=.;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_STG-{456A8152-083C-46D1-B59A-BDD474DD8969}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -2750,14 +2750,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Load CSV\OrderReviews_STG\Flat File Source.Outputs[Flat File Source Output].Columns[review_answer_timestamp]"
+                          refId="Package\Load CSV\OrderReviews_STG\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;review_answer_timestamp&quot;]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Load CSV\OrderReviews_STG\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[&quot;review_answer_timestamp&quot;]"
                           length="30"
-                          lineageId="Package\Load CSV\OrderReviews_STG\Flat File Source.Outputs[Flat File Source Output].Columns[review_answer_timestamp]"
-                          name="review_answer_timestamp"
+                          lineageId="Package\Load CSV\OrderReviews_STG\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;review_answer_timestamp&quot;]"
+                          name="&quot;review_answer_timestamp&quot;"
                           truncationRowDisposition="FailComponent">
                           <properties>
                             <property
@@ -2954,12 +2954,12 @@
                           externalMetadataColumnId="Package\Load CSV\OrderReviews_STG\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[review_creation_date]"
                           lineageId="Package\Load CSV\OrderReviews_STG\Flat File Source.Outputs[Flat File Source Output].Columns[review_creation_date]" />
                         <inputColumn
-                          refId="Package\Load CSV\OrderReviews_STG\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[review_answer_timestamp]"
+                          refId="Package\Load CSV\OrderReviews_STG\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[&quot;review_answer_timestamp&quot;]"
                           cachedDataType="wstr"
                           cachedLength="30"
-                          cachedName="review_answer_timestamp"
+                          cachedName="&quot;review_answer_timestamp&quot;"
                           externalMetadataColumnId="Package\Load CSV\OrderReviews_STG\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[review_answer_timestamp]"
-                          lineageId="Package\Load CSV\OrderReviews_STG\Flat File Source.Outputs[Flat File Source Output].Columns[review_answer_timestamp]" />
+                          lineageId="Package\Load CSV\OrderReviews_STG\Flat File Source.Outputs[Flat File Source Output].Columns[&quot;review_answer_timestamp&quot;]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -4456,9 +4456,9 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="180,42"
-          Id="Package\Truncate STG tables"
-          TopLeft="448,68.6666666666666" />
+          Size="207,42"
+          Id="Package\Load CSV\CategoryTranslation_STG"
+          TopLeft="68.1111111111111,568.666666666667" />
         <NodeLayout
           Size="155,42"
           Id="Package\Load CSV\Customer_STG"
@@ -4491,10 +4491,6 @@
           Size="141,42"
           Id="Package\Load CSV\Sellers_STG"
           TopLeft="100.333333333333,495.555555555556" />
-        <NodeLayout
-          Size="207,42"
-          Id="Package\Load CSV\CategoryTranslation_STG"
-          TopLeft="68.1111111111111,568.666666666667" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -4502,6 +4498,10 @@
           Size="334,811"
           Id="Package\Load CSV"
           TopLeft="463,181" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Truncate STG tables"
+          TopLeft="448,68.6666666666666" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="538,110.666666666667">
@@ -4540,18 +4540,69 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Load CSV\Customer_STG">
+    design-time-name="Package\Load CSV\CategoryTranslation_STG">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="177,42"
+          Id="Package\Load CSV\CategoryTranslation_STG\OLE DB Destination"
+          TopLeft="297,441" />
+        <NodeLayout
           Size="156,42"
-          Id="Package\Load CSV\Customer_STG\Flat File Source"
-          TopLeft="537,35" />
+          Id="Package\Load CSV\CategoryTranslation_STG\Flat File Source"
+          TopLeft="304,75" />
+        <EdgeLayout
+          Id="Package\Load CSV\CategoryTranslation_STG.Paths[Flat File Source Output]"
+          TopLeft="383.75,117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,324"
+              Start="0,0"
+              End="0,316.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,316.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\CategoryTranslation_STG\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load CSV\Customer_STG">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\Load CSV\Customer_STG\OLE DB Destination"
           TopLeft="530,401" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load CSV\Customer_STG\Flat File Source"
+          TopLeft="537,35" />
         <EdgeLayout
           Id="Package\Load CSV\Customer_STG.Paths[Flat File Source Output]"
           TopLeft="616.75,77">
@@ -4571,63 +4622,40 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Load CSV\OrderItems_STG">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load CSV\OrderItems_STG\Flat File Source"
-          TopLeft="67,60" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Load CSV\OrderItems_STG\OLE DB Destination"
-          TopLeft="60,426" />
-        <EdgeLayout
-          Id="Package\Load CSV\OrderItems_STG.Paths[Flat File Source Output]"
-          TopLeft="146.75,102">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,324"
-              Start="0,0"
-              End="0,316.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,316.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\Customer_STG\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load CSV\Geolocation_STG">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load CSV\Geolocation_STG\Flat File Source"
-          TopLeft="537,83" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\Load CSV\Geolocation_STG\OLE DB Destination"
           TopLeft="530,449" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load CSV\Geolocation_STG\Flat File Source"
+          TopLeft="537,83" />
         <EdgeLayout
           Id="Package\Load CSV\Geolocation_STG.Paths[Flat File Source Output]"
           TopLeft="616.75,125">
@@ -4647,25 +4675,93 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\Geolocation_STG\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load CSV\OrderItems_STG">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Load CSV\OrderItems_STG\OLE DB Destination"
+          TopLeft="60,426" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load CSV\OrderItems_STG\Flat File Source"
+          TopLeft="67,60" />
+        <EdgeLayout
+          Id="Package\Load CSV\OrderItems_STG.Paths[Flat File Source Output]"
+          TopLeft="146.75,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,324"
+              Start="0,0"
+              End="0,316.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,316.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\OrderItems_STG\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load CSV\OrderPayments_STG">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load CSV\OrderPayments_STG\Flat File Source"
-          TopLeft="67,60" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\Load CSV\OrderPayments_STG\OLE DB Destination"
           TopLeft="60,426" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load CSV\OrderPayments_STG\Flat File Source"
+          TopLeft="67,60" />
         <EdgeLayout
           Id="Package\Load CSV\OrderPayments_STG.Paths[Flat File Source Output]"
           TopLeft="146.75,102">
@@ -4685,25 +4781,40 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\OrderPayments_STG\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load CSV\OrderReviews_STG">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42"
-          Id="Package\Load CSV\OrderReviews_STG\Flat File Source"
-          TopLeft="67,60" />
-        <NodeLayout
           Size="177,42"
           Id="Package\Load CSV\OrderReviews_STG\OLE DB Destination"
           TopLeft="60,426" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load CSV\OrderReviews_STG\Flat File Source"
+          TopLeft="67,60" />
         <EdgeLayout
           Id="Package\Load CSV\OrderReviews_STG.Paths[Flat File Source Output]"
           TopLeft="146.75,102">
@@ -4729,11 +4840,24 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\OrderReviews_STG\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load CSV\Orders_STG">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="156,42"
           Id="Package\Load CSV\Orders_STG\Flat File Source"
@@ -4761,25 +4885,40 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\Orders_STG\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load CSV\Products_STG">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load CSV\Products_STG\Flat File Source"
-          TopLeft="67,60" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\Load CSV\Products_STG\OLE DB Destination"
           TopLeft="60,426" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load CSV\Products_STG\Flat File Source"
+          TopLeft="67,60" />
         <EdgeLayout
           Id="Package\Load CSV\Products_STG.Paths[Flat File Source Output]"
           TopLeft="146.75,102">
@@ -4799,25 +4938,40 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load CSV\Products_STG\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load CSV\Sellers_STG">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load CSV\Sellers_STG\Flat File Source"
-          TopLeft="67,60" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177,42"
           Id="Package\Load CSV\Sellers_STG\OLE DB Destination"
           TopLeft="60,426" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Load CSV\Sellers_STG\Flat File Source"
+          TopLeft="67,60" />
         <EdgeLayout
           Id="Package\Load CSV\Sellers_STG.Paths[Flat File Source Output]"
           TopLeft="146.75,102">
@@ -4837,154 +4991,14 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Load CSV\CategoryTranslation_STG">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Load CSV\CategoryTranslation_STG\Flat File Source"
-          TopLeft="304,75" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Load CSV\CategoryTranslation_STG\OLE DB Destination"
-          TopLeft="297,441" />
-        <EdgeLayout
-          Id="Package\Load CSV\CategoryTranslation_STG.Paths[Flat File Source Output]"
-          TopLeft="383.75,117">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,324"
-              Start="0,0"
-              End="0,316.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,316.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CSV\Customer_STG\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CSV\CategoryTranslation_STG\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CSV\Geolocation_STG\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CSV\OrderItems_STG\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CSV\OrderPayments_STG\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CSV\OrderReviews_STG\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CSV\Orders_STG\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load CSV\Products_STG\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load CSV\Sellers_STG\OLE DB Destination">
     <Properties>
