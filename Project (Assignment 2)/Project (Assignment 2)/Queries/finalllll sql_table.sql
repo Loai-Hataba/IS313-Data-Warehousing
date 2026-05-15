@@ -1,3 +1,5 @@
+use master 
+
 Create Database Brazilian_DW
 
 USE Brazilian_DW
@@ -7,6 +9,9 @@ Drop database Brazilian_DW
 
 -- DIMENSIONS --
 drop table Dim_Customer
+
+
+
 CREATE TABLE Dim_Customer (
     customer_unique_id       NVARCHAR(50),
     customer_id              NVARCHAR(50) PRIMARY KEY,
@@ -135,6 +140,9 @@ INSERT INTO ETL_Control (table_name, last_load_timestamp) VALUES
 ('Fact_Order_Items', '1900-01-01'),
 ('Fact_Payments',    '1900-01-01'),
 ('Fact_Reviews',     '1900-01-01');
+
+
+
 select *from  ETL_Control
 DELETE FROM Fact_Order_Items;
 DELETE FROM Fact_Payments;

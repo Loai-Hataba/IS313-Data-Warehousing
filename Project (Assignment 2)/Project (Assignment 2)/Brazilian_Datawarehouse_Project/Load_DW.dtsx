@@ -11,8 +11,8 @@
   DTS:LocaleID="19465"
   DTS:ObjectName="Load_DW"
   DTS:PackageType="5"
-  DTS:VersionBuild="149"
-  DTS:VersionGUID="{8D28E8BF-2C3E-4D88-A85A-C29A52470A17}">
+  DTS:VersionBuild="150"
+  DTS:VersionGUID="{B7E29BE6-57E5-4464-BA37-58BD6229417E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.;Initial Catalog=Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{8F76D345-B142-49CA-926E-5B5DC9679F80}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;" />
+          DTS:ConnectionString="Data Source=Loai-Pavillion\SQLEXPRESS01;Initial Catalog=Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{8F76D345-B142-49CA-926E-5B5DC9679F80}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -41,7 +41,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\customer_text.txt">
+          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\Big three.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_id"
-              DTS:DTSID="{548AF021-5AFE-4B2B-9A19-5D1514759D1E}"
+              DTS:DTSID="{827D9652-85A8-41C1-8E30-0FB4D00A71E1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_unique_id"
-              DTS:DTSID="{34ED78FA-3800-4B85-8E1F-48E93217DC2B}"
+              DTS:DTSID="{174A29F5-1ABD-4AAE-B10F-73E586B97EB7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_zip_code_prefix"
-              DTS:DTSID="{7382792D-9F62-48FC-BEA1-EBB0563F5432}"
+              DTS:DTSID="{274DB404-1A16-4B53-B3C1-8B2B6EBCECCD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_city"
-              DTS:DTSID="{2CE281DA-ECF6-4CCF-8698-956300DAA2EA}"
+              DTS:DTSID="{639AF5A7-46D8-4976-BDC5-F59119D940DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,7 +86,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="customer_state"
-              DTS:DTSID="{85FFD524-FA58-48ED-9EA9-170F02ED928B}"
+              DTS:DTSID="{3F617059-6210-4D4A-9465-B09E7362069B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +94,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="effective_start_date"
-              DTS:DTSID="{B7D5B727-016C-484A-90AB-87DDEBF63863}"
+              DTS:DTSID="{AA211E94-10C0-4B63-B002-AA2B99929907}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="11"
               DTS:TextQualified="True"
               DTS:ObjectName="is_current"
-              DTS:DTSID="{CD1EBA0A-E439-494D-81B0-DAB9E0045FB0}"
+              DTS:DTSID="{FDE0F1F2-7E65-4C06-BFE9-C04128AC2E2B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -110,7 +110,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorCode"
-              DTS:DTSID="{82360A80-4F3C-49C1-8C96-D088F6043FF1}"
+              DTS:DTSID="{8C89A779-576D-4223-BF59-96E9F0839326}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -118,7 +118,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="ErrorColumn"
-              DTS:DTSID="{B6484BE9-3A16-414C-A2DE-63E9EBD78E45}"
+              DTS:DTSID="{47E551EF-F3A6-4646-AD95-00F3AF568AD3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -133,7 +133,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{9BD6A89A-6170-4962-8FAE-6008FB856354}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment 1;" />
+          DTS:ConnectionString="Data Source=Loai-Pavillion\SQLEXPRESS01;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{9BD6A89A-6170-4962-8FAE-6008FB856354}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment 1;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -7165,7 +7165,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7175,7 +7175,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

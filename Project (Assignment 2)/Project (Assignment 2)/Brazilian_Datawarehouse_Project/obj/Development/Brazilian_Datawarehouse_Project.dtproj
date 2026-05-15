@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LOAI-PAVILLION</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxgSSvSAJXUqAg7sRyejSFAAAAAACAAAAAAAQZgAAAAEAACAAAAChIkDXrucm50uiAR4UayAjb9MqUs45tz78J6vhbHUNPgAAAAAOgAAAAAIAACAAAACTSaPSFnkUZu5joHi1PIyXPvoWPrGR6B+EzmHCQ69cU5AAAABM9GyB6H/fEj2bA51nqOurdV0AeCkuEvcGI2A7Lt0uW335QPjxo/SPc3JNhdLMfCXIfJLu+NqUilVEe5LxfNeXUASa6taYVktc8YMwBYEXg2Zl/A521z6VNZX9mQ5zxbRFt7wAIz7hkaytFzKW5C3qxMI5Rc1SIkYTdrKx0U0zhFxGubjS1NmanbbeJrDWYNNAAAAAK9l/ub4q7AM1tw7OOgSM8XUYk6SLIjoe38m8S8VxZW442Cd0ruFY1lKFr6HURc8VzHSj3InMSfk3tP3AMROQMQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2jd4KJz8IkWkUQhrUY561wAAAAACAAAAAAAQZgAAAAEAACAAAADzqf0WtFSWa6iMzVBX3F5beD7/euPi/NOxpi8cJMpFXwAAAAAOgAAAAAIAACAAAABCWmmWRinDlbJZEexqdGBtxh4qdj9HqRG2CeGluRkWgZAAAACIPVYTztvsM+Zp8ahzCjgMhm4vsMZNlgJbssubcAMiLQbZosor3yK+O/uZJGAMUJ3hqGxj5aRYsqD6eH4n9p3FlRH3etPt9v3EG0/Sb0E+lg6RJdFuX20xAaPkWrcFy47sxTJavbtkTiOOkHw8oCefU6Xo2NyujuilB9uMmr0X6YDR2JPe8lK2oDrelm+57uxAAAAACNorGsOM2hEloQC0t/00LUXmr9fbLMmhPhkILX1HAEvvhhVHg7WOmOeWdpJPj0kyV/QLNZWKZU0cVWdJArtldg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -43,10 +43,10 @@
                 <SSIS:Property SSIS:Name="Name">Load_STG</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">31</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">35</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{A88132BE-7AD5-4F20-BBEC-D0698B33CE30}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{EB39264E-0FB1-4B24-9409-CF2D7E6749C9}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -79,7 +79,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=.;Initial Catalog=Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_STG-{12DC5278-8F06-4970-A38E-43512E004BF9}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=Loai-Pavillion\SQLEXPRESS01;Initial Catalog=Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_STG-{12DC5278-8F06-4970-A38E-43512E004BF9}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -183,7 +183,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">.</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Loai-Pavillion\SQLEXPRESS01</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -272,7 +272,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\product_category_name_translation.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\product_category_name_translation.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -363,6 +363,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -467,7 +469,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\olist_customers_dataset.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_customers_dataset.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -558,6 +560,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -662,7 +666,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\olist_geolocation_dataset.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_geolocation_dataset.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -753,6 +757,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -857,7 +863,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\olist_order_items_dataset.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_order_items_dataset.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -948,6 +954,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1052,7 +1060,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\olist_order_payments_dataset.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_order_payments_dataset.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1143,6 +1151,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1247,7 +1257,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\olist_order_reviews_dataset.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_order_reviews_dataset.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1338,6 +1348,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1442,7 +1454,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\olist_orders_dataset.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_orders_dataset.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1533,6 +1545,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1637,7 +1651,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\olist_products_dataset.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_products_dataset.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1728,6 +1742,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1832,7 +1848,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\Project (Assignment 2)\Datasets\olist_sellers_dataset.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\olist_sellers_dataset.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1923,6 +1939,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1982,7 +2000,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=.;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_STG-{456A8152-083C-46D1-B59A-BDD474DD8969}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=Loai-Pavillion\SQLEXPRESS01;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_STG-{456A8152-083C-46D1-B59A-BDD474DD8969}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2086,7 +2104,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">.</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Loai-Pavillion\SQLEXPRESS01</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2112,10 +2130,10 @@
                 <SSIS:Property SSIS:Name="Name">Load_DW</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">148</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">150</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{38C39430-DD02-4274-8AB5-11806B27D5AB}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{B7E29BE6-57E5-4464-BA37-58BD6229417E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -2148,7 +2166,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=.;Initial Catalog=Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{8F76D345-B142-49CA-926E-5B5DC9679F80}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=Loai-Pavillion\SQLEXPRESS01;Initial Catalog=Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{8F76D345-B142-49CA-926E-5B5DC9679F80}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2252,7 +2270,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">.</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Loai-Pavillion\SQLEXPRESS01</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2341,7 +2359,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\College\3RD Year\2nd term\DWH\Project\IS313-Data-Warehousing\customer_text.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\Big three.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2493,7 +2511,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=.;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{9BD6A89A-6170-4962-8FAE-6008FB856354}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment 1;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=Loai-Pavillion\SQLEXPRESS01;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{9BD6A89A-6170-4962-8FAE-6008FB856354}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment 1;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2597,7 +2615,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">.</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Loai-Pavillion\SQLEXPRESS01</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

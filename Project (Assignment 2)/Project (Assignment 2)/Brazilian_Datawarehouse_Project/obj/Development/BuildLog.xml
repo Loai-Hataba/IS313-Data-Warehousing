@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Brazilian_Datawarehouse_Project</Name>
-    <LastWriteTime>2026-05-11T16:11:57.8815565Z</LastWriteTime>
+    <LastWriteTime>2026-05-15T21:31:50.232609Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Load_STG.dtsx</Name>
-      <LastWriteTime>2026-05-11T16:10:36.4471315Z</LastWriteTime>
+      <LastWriteTime>2026-05-15T21:26:21.8399122Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Load_DW.dtsx</Name>
-      <LastWriteTime>2026-05-11T16:39:21.5565422Z</LastWriteTime>
+      <LastWriteTime>2026-05-15T21:31:40.4169464Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
