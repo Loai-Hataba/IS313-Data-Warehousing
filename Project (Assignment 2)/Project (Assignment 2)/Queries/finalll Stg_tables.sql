@@ -18,6 +18,23 @@ use STG_Brazilian_DW
 --FROM STG_Customers1
 --GROUP BY customer_id
 --HAVING COUNT(*) > 1;
+
+-- In STG_Brazilian_DW
+SELECT customer_unique_id, COUNT(*) as cnt
+FROM stg_customers
+GROUP BY customer_unique_id
+HAVING COUNT(*) > 1
+ORDER BY cnt DESC;
+
+SELECT customer_id, COUNT(*) AS duplicate_count
+FROM STG_Customers
+GROUP BY customer_id
+HAVING COUNT(*) > 1;
+
+update stg_customers set customer_city = 'giza' where customer_id = 'fadbb3709178fc513abc1b2670aa1ad2'
+
+select * from stg_customers
+
 CREATE TABLE STG_Customers (
     customer_id NVARCHAR(50) PRIMARY KEY,
     customer_unique_id NVARCHAR(50),
@@ -25,10 +42,7 @@ CREATE TABLE STG_Customers (
     customer_city NVARCHAR(100),
     customer_state NVARCHAR(2)
 );
-SELECT customer_id, COUNT(*) AS duplicate_count
-FROM STG_Customers
-GROUP BY customer_id
-HAVING COUNT(*) > 1;
+
 -- 2. olist_geolocation_dataset.csv
 CREATE TABLE STG_Geolocation (
     geolocation_zip_code_prefix NVARCHAR(5),
@@ -114,3 +128,5 @@ CREATE TABLE STG_CategoryTranslation (
     product_category_name NVARCHAR(100),
     product_category_name_english NVARCHAR(100)
 );
+
+

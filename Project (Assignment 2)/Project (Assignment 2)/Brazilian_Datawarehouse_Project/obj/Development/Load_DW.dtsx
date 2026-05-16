@@ -11,8 +11,8 @@
   DTS:LocaleID="19465"
   DTS:ObjectName="Load_DW"
   DTS:PackageType="5"
-  DTS:VersionBuild="150"
-  DTS:VersionGUID="{B7E29BE6-57E5-4464-BA37-58BD6229417E}">
+  DTS:VersionBuild="201"
+  DTS:VersionGUID="{153892B7-1ACF-4091-AADE-7C73611673DD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -134,6 +134,170 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=Loai-Pavillion\SQLEXPRESS01;Initial Catalog=STG_Brazilian_DW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Load_DW-{9BD6A89A-6170-4962-8FAE-6008FB856354}LOAI-PAVILLION\SQLEXPRESS01.DWH_Assignment 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[testing nabil]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F8EA937F-6D20-45D0-994E-BD38A170D621}"
+      DTS:ObjectName="testing nabil">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="19465"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="0"
+          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\Nabil test.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="zip_code_prefix"
+              DTS:DTSID="{855F6A96-F4D0-4389-8E40-0B598222B936}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude"
+              DTS:DTSID="{33DA558C-BA5B-44B9-B382-D8374936B48A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude"
+              DTS:DTSID="{36F52BBB-E94B-492A-96A3-755DBE5375F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{5736A668-364C-4558-809B-5CC48334A429}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{6C5A3179-0F49-40EF-9BFA-5EEE76B07F4D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude_numeric"
+              DTS:DTSID="{82DF4C61-74DB-4CDB-8E52-DAC9D1DD8B28}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude_numeric"
+              DTS:DTSID="{A8E1DE60-FE8C-45A3-AF4E-2E7D7AE287A3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[testing nabil 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1B250E9C-478F-4401-B23C-611C5970EAA6}"
+      DTS:ObjectName="testing nabil 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="19465"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="0"
+          DTS:ConnectionString="D:\Programming\SQL\IS313-Data Warehousing\Project (Assignment 2)\Project (Assignment 2)\Datasets\Nabil Test 2.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="zip_code_prefix"
+              DTS:DTSID="{95D1C25B-A531-432C-8078-3D2B0F4577D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OLE DB Source.latitude"
+              DTS:DTSID="{0C9475E1-AC70-4A47-B080-EFC8B96A11B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OLE DB Source.longitude"
+              DTS:DTSID="{9EA49A10-F75C-42C5-A283-58C7EDD92108}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{843444CB-3B03-4615-93F2-D74779716010}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{774991B7-9D47-421E-9087-23F2849AC864}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lookup.latitude"
+              DTS:DTSID="{0341B75A-588E-40E4-9401-828AF2B71963}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="11"
+              DTS:DataScale="8"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lookup.longitude"
+              DTS:DTSID="{64B35CBA-36E1-487A-855B-7DA2309DEFF6}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -749,14 +913,18 @@
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT customer_unique_id, customer_id, customer_zip_code_prefix, customer_city, customer_state FROM Dim_Customer</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT customer_unique_id, customer_sk, customer_zip_code_prefix, customer_city, customer_state
+FROM Dim_Customer
+WHERE is_current = 1</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT customer_unique_id, customer_id, customer_zip_code_prefix, customer_city, customer_state FROM Dim_Customer) [refTable]
-where [refTable].[customer_id] = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT customer_unique_id, customer_sk, customer_zip_code_prefix, customer_city, customer_state
+FROM Dim_Customer
+WHERE is_current = 1) [refTable]
+where [refTable].[customer_unique_id] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -787,12 +955,12 @@ where [refTable].[customer_id] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="customer_unique_id" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_id" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_zip_code_prefix" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_city" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_state" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="customer_unique_id" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_sk" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_zip_code_prefix" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_city" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_state" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Load Dim_Customer\OLE DB Source.Outputs[OLE DB Source Output].Columns[customer_id]};</property>
+                  name="ParameterMap">#{Package\Load Dim_Customer\OLE DB Source.Outputs[OLE DB Source Output].Columns[customer_unique_id]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -816,16 +984,16 @@ where [refTable].[customer_id] = ?</property>
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load Dim_Customer\Lookup.Inputs[Lookup Input].Columns[customer_id]"
+                      refId="Package\Load Dim_Customer\Lookup.Inputs[Lookup Input].Columns[customer_unique_id]"
                       cachedDataType="wstr"
                       cachedLength="50"
-                      cachedName="customer_id"
-                      lineageId="Package\Load Dim_Customer\OLE DB Source.Outputs[OLE DB Source Output].Columns[customer_id]">
+                      cachedName="customer_unique_id"
+                      lineageId="Package\Load Dim_Customer\OLE DB Source.Outputs[OLE DB Source Output].Columns[customer_unique_id]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">customer_id</property>
+                          name="JoinToReferenceColumn">customer_unique_id</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -1180,6 +1348,10 @@ where [refTable].[customer_id] = ?</property>
                       refId="Package\Load Dim_Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[is_current]"
                       dataType="bool"
                       name="is_current" />
+                    <externalMetadataColumn
+                      refId="Package\Load Dim_Customer\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_sk]"
+                      dataType="i4"
+                      name="customer_sk" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1322,11 +1494,11 @@ where [refTable].[customer_id] = ?</property>
                       externalMetadataColumnId="Package\Load Dim_Customer\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[effective_start_date]"
                       lineageId="Package\Load Dim_Customer\start date and is current 1.Outputs[Derived Column Output].Columns[effective_start_date]" />
                     <inputColumn
-                      refId="Package\Load Dim_Customer\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[effective_end_date]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="effective_end_date"
-                      externalMetadataColumnId="Package\Load Dim_Customer\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[effective_end_date]"
-                      lineageId="Package\Load Dim_Customer\start date and is current 1.Outputs[Derived Column Output].Columns[effective_end_date]" />
+                      refId="Package\Load Dim_Customer\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[is_current]"
+                      cachedDataType="bool"
+                      cachedName="is_current"
+                      externalMetadataColumnId="Package\Load Dim_Customer\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[is_current]"
+                      lineageId="Package\Load Dim_Customer\start date and is current 1.Outputs[Derived Column Output].Columns[is_current]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1367,6 +1539,10 @@ where [refTable].[customer_id] = ?</property>
                       refId="Package\Load Dim_Customer\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[is_current]"
                       dataType="bool"
                       name="is_current" />
+                    <externalMetadataColumn
+                      refId="Package\Load Dim_Customer\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[customer_sk]"
+                      dataType="i4"
+                      name="customer_sk" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1420,7 +1596,14 @@ where [refTable].[customer_id] = ?</property>
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT customer_id, customer_unique_id, customer_zip_code_prefix, customer_city, customer_state FROM STG_Customers</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
+    customer_unique_id,
+    MAX(customer_id)              AS customer_id,
+    MAX(customer_zip_code_prefix) AS customer_zip_code_prefix,
+    MAX(customer_city)            AS customer_city,
+    MAX(customer_state)           AS customer_state
+FROM STG_Customers
+GROUP BY customer_unique_id</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1750,28 +1933,6 @@ where [refTable].[customer_id] = ?</property>
                           name="FriendlyExpression">(DT_BOOL)1</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Dim_Customer\start date and is current 1.Outputs[Derived Column Output].Columns[effective_end_date]"
-                      dataType="dbTimeStamp"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Load Dim_Customer\start date and is current 1.Outputs[Derived Column Output].Columns[effective_end_date]"
-                      name="effective_end_date"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[GETDATE]()</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">GETDATE()</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -2020,19 +2181,6 @@ where [refTable].[customer_id] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Load Dim_Customer\Union All.Inputs[Union All Input 1].Columns[effective_start_date]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="effective_start_date"
-                      lineageId="Package\Load Dim_Customer\start date and iscurrent.Outputs[Derived Column Output].Columns[effective_start_date]">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Output column lineage ID"
-                          name="OutputColumnLineageID">#{Package\Load Dim_Customer\Union All.Outputs[Union All Output 1].Columns[effective_start_date]}</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Load Dim_Customer\Union All.Inputs[Union All Input 1].Columns[is_current]"
                       cachedDataType="bool"
                       cachedName="is_current"
@@ -2043,6 +2191,19 @@ where [refTable].[customer_id] = ?</property>
                           dataType="System.Int32"
                           description="Output column lineage ID"
                           name="OutputColumnLineageID">#{Package\Load Dim_Customer\Union All.Outputs[Union All Output 1].Columns[is_current]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Load Dim_Customer\Union All.Inputs[Union All Input 1].Columns[effective_start_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="effective_start_date"
+                      lineageId="Package\Load Dim_Customer\start date and iscurrent.Outputs[Derived Column Output].Columns[effective_start_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Load Dim_Customer\Union All.Outputs[Union All Output 1].Columns[effective_start_date]}</property>
                       </properties>
                     </inputColumn>
                   </inputColumns>
@@ -2216,24 +2377,6 @@ where [refTable].[customer_id] = ?</property>
                       cachedDataType="r8"
                       cachedName="longitude"
                       lineageId="Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[longitude]" />
-                    <inputColumn
-                      refId="Package\Load Dim_Geolocation\Data Conversion.Inputs[Data Conversion Input].Columns[zip_code_prefix]"
-                      cachedDataType="wstr"
-                      cachedLength="5"
-                      cachedName="zip_code_prefix"
-                      lineageId="Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[zip_code_prefix]" />
-                    <inputColumn
-                      refId="Package\Load Dim_Geolocation\Data Conversion.Inputs[Data Conversion Input].Columns[city]"
-                      cachedDataType="wstr"
-                      cachedLength="100"
-                      cachedName="city"
-                      lineageId="Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[city]" />
-                    <inputColumn
-                      refId="Package\Load Dim_Geolocation\Data Conversion.Inputs[Data Conversion Input].Columns[state]"
-                      cachedDataType="wstr"
-                      cachedLength="2"
-                      cachedName="state"
-                      lineageId="Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[state]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2289,72 +2432,6 @@ where [refTable].[customer_id] = ?</property>
                           name="FastParse">false</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[zip_code_prefix_str]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="5"
-                      lineageId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[zip_code_prefix_str]"
-                      name="zip_code_prefix_str"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[zip_code_prefix]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[city_str]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="100"
-                      lineageId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[city_str]"
-                      name="city_str"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[city]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[state_str]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="2"
-                      lineageId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[state_str]"
-                      name="state_str"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[state]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -2375,6 +2452,148 @@ where [refTable].[customer_id] = ?</property>
                       refId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load Dim_Geolocation\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Dim_Geolocation]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Dim_Geolocation]) [refTable]
+where [refTable].[zip_code_prefix] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="geo_sk" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="zip_code_prefix" dataType="DT_WSTR" length="5" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="latitude" dataType="DT_NUMERIC" length="0" precision="10" scale="8" codePage="0"/&gt;&lt;referenceColumn name="longitude" dataType="DT_NUMERIC" length="0" precision="11" scale="8" codePage="0"/&gt;&lt;referenceColumn name="city" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="state" dataType="DT_WSTR" length="2" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[zip_code_prefix]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load Dim_Geolocation\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Brazilian_DB]"
+                  connectionManagerRefId="Package.ConnectionManagers[Brazilian_DB]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load Dim_Geolocation\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load Dim_Geolocation\Lookup.Inputs[Lookup Input].Columns[zip_code_prefix]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="zip_code_prefix"
+                      lineageId="Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[zip_code_prefix]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">zip_code_prefix</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load Dim_Geolocation\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Load Dim_Geolocation\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Dim_Geolocation\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Load Dim_Geolocation\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load Dim_Geolocation\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Load Dim_Geolocation\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Dim_Geolocation\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load Dim_Geolocation\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load Dim_Geolocation\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load Dim_Geolocation\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2455,22 +2674,6 @@ where [refTable].[customer_id] = ?</property>
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[longitude_numeric]"
-                      cachedDataType="numeric"
-                      cachedName="longitude_numeric"
-                      cachedPrecision="11"
-                      cachedScale="8"
-                      externalMetadataColumnId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[longitude]"
-                      lineageId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[longitude_numeric]" />
-                    <inputColumn
-                      refId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[latitude_numeric]"
-                      cachedDataType="numeric"
-                      cachedName="latitude_numeric"
-                      cachedPrecision="10"
-                      cachedScale="8"
-                      externalMetadataColumnId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[latitude]"
-                      lineageId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[latitude_numeric]" />
-                    <inputColumn
                       refId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[zip_code_prefix]"
                       cachedDataType="wstr"
                       cachedLength="5"
@@ -2491,6 +2694,22 @@ where [refTable].[customer_id] = ?</property>
                       cachedName="state"
                       externalMetadataColumnId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[state]"
                       lineageId="Package\Load Dim_Geolocation\OLE DB Source.Outputs[OLE DB Source Output].Columns[state]" />
+                    <inputColumn
+                      refId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[latitude_numeric]"
+                      cachedDataType="numeric"
+                      cachedName="latitude_numeric"
+                      cachedPrecision="10"
+                      cachedScale="8"
+                      externalMetadataColumnId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[latitude]"
+                      lineageId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[latitude_numeric]" />
+                    <inputColumn
+                      refId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[longitude_numeric]"
+                      cachedDataType="numeric"
+                      cachedName="longitude_numeric"
+                      cachedPrecision="11"
+                      cachedScale="8"
+                      externalMetadataColumnId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[longitude]"
+                      lineageId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output].Columns[longitude_numeric]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2580,12 +2799,11 @@ where [refTable].[customer_id] = ?</property>
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
     geolocation_zip_code_prefix AS zip_code_prefix,
-    MIN(CAST(geolocation_lat AS FLOAT)) AS latitude,
-    MIN(CAST(geolocation_lng AS FLOAT)) AS longitude,
-    MIN(geolocation_city) AS city,
-    MIN(geolocation_state) AS state
-FROM STG_Geolocation
-GROUP BY geolocation_zip_code_prefix</property>
+    (CAST(geolocation_lat AS FLOAT)) AS latitude,
+    (CAST(geolocation_lng AS FLOAT)) AS longitude,
+    (geolocation_city) AS city,
+    (geolocation_state) AS state
+FROM STG_Geolocation</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2751,9 +2969,14 @@ GROUP BY geolocation_zip_code_prefix</property>
           <paths>
             <path
               refId="Package\Load Dim_Geolocation.Paths[Data Conversion Output]"
-              endId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Load Dim_Geolocation\Lookup.Inputs[Lookup Input]"
               name="Data Conversion Output"
               startId="Package\Load Dim_Geolocation\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Load Dim_Geolocation.Paths[Lookup No Match Output]"
+              endId="Package\Load Dim_Geolocation\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Load Dim_Geolocation\Lookup.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Load Dim_Geolocation.Paths[OLE DB Source Output]"
               endId="Package\Load Dim_Geolocation\Data Conversion.Inputs[Data Conversion Input]"
@@ -2791,13 +3014,13 @@ GROUP BY geolocation_zip_code_prefix</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT customer_unique_id, customer_id FROM Dim_Customer WHERE is_current = 1</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT customer_sk , customer_id FROM Dim_Customer WHERE is_current = 1</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT customer_unique_id, customer_id FROM Dim_Customer WHERE is_current = 1) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (SELECT customer_sk , customer_id FROM Dim_Customer WHERE is_current = 1) [refTable]
 where [refTable].[customer_id] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -2829,7 +3052,7 @@ where [refTable].[customer_id] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="customer_unique_id" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_id" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="customer_sk" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="customer_id" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -2885,6 +3108,22 @@ where [refTable].[customer_id] = ?</property>
                   exclusionGroup="1"
                   name="Lookup Match Output"
                   synchronousInputId="Package\Load Dim_Orders\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load Dim_Orders\Lookup.Outputs[Lookup Match Output].Columns[customer_sk]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Load Dim_Orders\Lookup.Outputs[Lookup Match Output].Columns[customer_sk]"
+                      name="customer_sk"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">customer_sk</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
@@ -3041,12 +3280,11 @@ where [refTable].[customer_id] = ?</property>
                       externalMetadataColumnId="Package\Load Dim_Orders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[order_estimated_delivery_date]"
                       lineageId="Package\Load Dim_Orders\OLE DB Source.Outputs[OLE DB Source Output].Columns[order_estimated_delivery_date]" />
                     <inputColumn
-                      refId="Package\Load Dim_Orders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_id]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="customer_id"
-                      externalMetadataColumnId="Package\Load Dim_Orders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_id_fk]"
-                      lineageId="Package\Load Dim_Orders\OLE DB Source.Outputs[OLE DB Source Output].Columns[customer_id]" />
+                      refId="Package\Load Dim_Orders\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[customer_sk]"
+                      cachedDataType="i4"
+                      cachedName="customer_sk"
+                      externalMetadataColumnId="Package\Load Dim_Orders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_sk_fk]"
+                      lineageId="Package\Load Dim_Orders\Lookup.Outputs[Lookup Match Output].Columns[customer_sk]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3081,10 +3319,9 @@ where [refTable].[customer_id] = ?</property>
                       dataType="dbTimeStamp"
                       name="order_estimated_delivery_date" />
                     <externalMetadataColumn
-                      refId="Package\Load Dim_Orders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_id_fk]"
-                      dataType="wstr"
-                      length="50"
-                      name="customer_id_fk" />
+                      refId="Package\Load Dim_Orders\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[customer_sk_fk]"
+                      dataType="i4"
+                      name="customer_sk_fk" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -6211,7 +6448,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
         <NodeLayout
           Size="191,42"
           Id="Package\Load Dim_Geolocation"
-          TopLeft="700,180" />
+          TopLeft="694.428571428571,151.285714285714" />
         <NodeLayout
           Size="166,42"
           Id="Package\Load Dim_Orders"
@@ -6470,30 +6707,30 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="765,222">
+          TopLeft="759.428571428571,193.285714285714">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-128,39"
+              EndConnector="-122.428571428571,67.714285714286"
               Start="0,0"
-              End="-128,31.5">
+              End="-122.428571428571,60.214285714286">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.7943925233645" />
+                    End="0,23.423230974633" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.7943925233645"
-                    Point2="0,15.7943925233645"
-                    Point3="-4,15.7943925233645" />
+                    Point1="0,23.423230974633"
+                    Point2="0,27.423230974633"
+                    Point3="-4,27.423230974633" />
                   <mssgle:LineSegment
-                    End="-124,15.7943925233645" />
+                    End="-118.428571428571,27.423230974633" />
                   <mssgle:CubicBezierSegment
-                    Point1="-124,15.7943925233645"
-                    Point2="-128,15.7943925233645"
-                    Point3="-128,19.7943925233645" />
+                    Point1="-118.428571428571,27.423230974633"
+                    Point2="-122.428571428571,27.423230974633"
+                    Point3="-122.428571428571,31.423230974633" />
                   <mssgle:LineSegment
-                    End="-128,31.5" />
+                    End="-122.428571428571,60.214285714286" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6504,30 +6741,30 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="826,222">
+          TopLeft="820.428571428571,193.285714285714">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="108,62"
+              EndConnector="113.571428571429,90.7142857142857"
               Start="0,0"
-              End="108,54.5">
+              End="113.571428571429,83.2142857142857">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.1090342679128" />
+                    End="0,32.7378727191811" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.1090342679128"
-                    Point2="0,25.1090342679128"
-                    Point3="4,25.1090342679128" />
+                    Point1="0,32.7378727191811"
+                    Point2="0,36.7378727191811"
+                    Point3="4,36.7378727191811" />
                   <mssgle:LineSegment
-                    End="104,25.1090342679128" />
+                    End="109.571428571429,36.7378727191811" />
                   <mssgle:CubicBezierSegment
-                    Point1="104,25.1090342679128"
-                    Point2="108,25.1090342679128"
-                    Point3="108,29.1090342679128" />
+                    Point1="109.571428571429,36.7378727191811"
+                    Point2="113.571428571429,36.7378727191811"
+                    Point3="113.571428571429,40.7378727191811" />
                   <mssgle:LineSegment
-                    End="108,54.5" />
+                    End="113.571428571429,83.2142857142857" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6677,7 +6914,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
     design-time-name="Package\Load Dim_CategoryTranslation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157,42"
           Id="Package\Load Dim_CategoryTranslation\OLE DB Source"
@@ -6717,7 +6954,9 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6755,21 +6994,17 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="187,42"
-          Id="Package\Load Dim_Customer\start date and is current 1"
-          TopLeft="669.142852119037,184.742865232059" />
-        <NodeLayout
           Size="180,42"
           Id="Package\Load Dim_Customer\OLE DB Destination 1"
           TopLeft="710.892846549728,287.035710589694" />
         <NodeLayout
-          Size="123,42"
-          Id="Package\Load Dim_Customer\Union All"
-          TopLeft="524,533" />
-        <NodeLayout
           Size="152,42"
           Id="Package\Load Dim_Customer\OLE DB Source"
           TopLeft="521,63" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\Load Dim_Customer\Union All"
+          TopLeft="524,533" />
         <NodeLayout
           Size="115,42"
           Id="Package\Load Dim_Customer\Lookup"
@@ -6787,6 +7022,10 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
           Id="Package\Load Dim_Customer\OLE DB Command"
           TopLeft="506,359" />
         <NodeLayout
+          Size="187,42"
+          Id="Package\Load Dim_Customer\start date and is current 1"
+          TopLeft="669.142852119037,184.742865232059" />
+        <NodeLayout
           Size="159,42"
           Id="Package\Load Dim_Customer\Conditional Split"
           TopLeft="332,263" />
@@ -6798,6 +7037,140 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
           Size="171,42"
           Id="Package\Load Dim_Customer\OLE DB Destination"
           TopLeft="491,626" />
+        <EdgeLayout
+          Id="Package\Load Dim_Customer.Paths[OLE DB Command Output]"
+          TopLeft="592.5,401">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="93,49"
+              Start="0,0"
+              End="93,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="4,24.5" />
+                  <mssgle:LineSegment
+                    End="89,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="89,24.5"
+                    Point2="93,24.5"
+                    Point3="93,28.5" />
+                  <mssgle:LineSegment
+                    End="93,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Dim_Customer.Paths[Lookup No Match Output]"
+          TopLeft="652.2,151.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="110.542852119037,32.9428652320586"
+              Start="0,0"
+              End="110.542852119037,25.4428652320586">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="106.542852119037,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="106.542852119037,0"
+                    Point2="110.542852119037,0"
+                    Point3="110.542852119037,4" />
+                  <mssgle:LineSegment
+                    End="110.542852119037,25.4428652320586" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="54.736465400287,-17.609375,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Dim_Customer.Paths[Lookup Match Output]"
+          TopLeft="594.5,173">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-183,90"
+              Start="0,0"
+              End="-183,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41"
+                    Point2="0,45"
+                    Point3="-4,45" />
+                  <mssgle:LineSegment
+                    End="-179,45" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-179,45"
+                    Point2="-183,45"
+                    Point3="-183,49" />
+                  <mssgle:LineSegment
+                    End="-183,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-139.69138671875,50,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Dim_Customer.Paths[Derived Column Output1]"
+          TopLeft="762.742852119037,226.342865232059">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.1499944306912,60.6928453576355"
+              Start="0,0"
+              End="38.1499944306912,53.1928453576355">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.3464226788178" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.3464226788178"
+                    Point2="0,30.3464226788178"
+                    Point3="4,30.3464226788178" />
+                  <mssgle:LineSegment
+                    End="34.1499944306912,30.3464226788178" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.1499944306912,30.3464226788178"
+                    Point2="38.1499944306912,30.3464226788178"
+                    Point3="38.1499944306912,34.3464226788178" />
+                  <mssgle:LineSegment
+                    End="38.1499944306912,53.1928453576355" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Dim_Customer.Paths[Derived Column Output]"
           TopLeft="685.5,492">
@@ -6996,140 +7369,6 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Dim_Customer.Paths[OLE DB Command Output]"
-          TopLeft="592.5,401">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="93,49"
-              Start="0,0"
-              End="93,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.5"
-                    Point2="0,24.5"
-                    Point3="4,24.5" />
-                  <mssgle:LineSegment
-                    End="89,24.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="89,24.5"
-                    Point2="93,24.5"
-                    Point3="93,28.5" />
-                  <mssgle:LineSegment
-                    End="93,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Dim_Customer.Paths[Lookup No Match Output]"
-          TopLeft="652.2,151.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="110.542852119037,32.9428652320586"
-              Start="0,0"
-              End="110.542852119037,25.4428652320586">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="106.542852119037,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="106.542852119037,0"
-                    Point2="110.542852119037,0"
-                    Point3="110.542852119037,4" />
-                  <mssgle:LineSegment
-                    End="110.542852119037,25.4428652320586" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="54.736465400287,-17.609375,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Dim_Customer.Paths[Lookup Match Output]"
-          TopLeft="594.5,173">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-183,90"
-              Start="0,0"
-              End="-183,82.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41"
-                    Point2="0,45"
-                    Point3="-4,45" />
-                  <mssgle:LineSegment
-                    End="-179,45" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-179,45"
-                    Point2="-183,45"
-                    Point3="-183,49" />
-                  <mssgle:LineSegment
-                    End="-183,82.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-139.69138671875,50,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Dim_Customer.Paths[Derived Column Output1]"
-          TopLeft="762.742852119037,226.342865232059">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="38.1499944306912,60.6928453576355"
-              Start="0,0"
-              End="38.1499944306912,53.1928453576355">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.3464226788178" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.3464226788178"
-                    Point2="0,30.3464226788178"
-                    Point3="4,30.3464226788178" />
-                  <mssgle:LineSegment
-                    End="34.1499944306912,30.3464226788178" />
-                  <mssgle:CubicBezierSegment
-                    Point1="34.1499944306912,30.3464226788178"
-                    Point2="38.1499944306912,30.3464226788178"
-                    Point3="38.1499944306912,34.3464226788178" />
-                  <mssgle:LineSegment
-                    End="38.1499944306912,53.1928453576355" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -7165,7 +7404,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7175,7 +7414,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7199,86 +7438,110 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
     design-time-name="Package\Load Dim_Geolocation">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Load Dim_Geolocation\OLE DB Destination"
+          TopLeft="523,462" />
         <NodeLayout
           Size="157,42"
           Id="Package\Load Dim_Geolocation\OLE DB Source"
           TopLeft="521,63" />
         <NodeLayout
+          Size="115,42"
+          Id="Package\Load Dim_Geolocation\Lookup"
+          TopLeft="558,293.25" />
+        <NodeLayout
           Size="161,42"
           Id="Package\Load Dim_Geolocation\Data Conversion"
-          TopLeft="525,233" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Load Dim_Geolocation\OLE DB Destination"
-          TopLeft="502,413" />
+          TopLeft="526.25,180.5" />
         <EdgeLayout
-          Id="Package\Load Dim_Geolocation.Paths[OLE DB Source Output]"
-          TopLeft="602.5,105">
+          Id="Package\Load Dim_Geolocation.Paths[Data Conversion Output]"
+          TopLeft="606.75,222.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,128"
+              EndConnector="8.75,70.75"
               Start="0,0"
-              End="0,120.5">
+              End="8.75,63.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,120.5" />
+                    End="0,31.375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.375"
+                    Point2="0,35.375"
+                    Point3="4,35.375" />
+                  <mssgle:LineSegment
+                    End="4.75,35.375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4.75,35.375"
+                    Point2="8.75,35.375"
+                    Point3="8.75,39.375" />
+                  <mssgle:LineSegment
+                    End="8.75,63.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Dim_Geolocation.Paths[Data Conversion Output]"
-          TopLeft="605.5,275">
+          Id="Package\Load Dim_Geolocation.Paths[OLE DB Source Output]"
+          TopLeft="603.125,105">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-15,138"
+              EndConnector="0,75.5"
               Start="0,0"
-              End="-15,130.5">
+              End="0,68">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,65" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,65"
-                    Point2="0,69"
-                    Point3="-4,69" />
-                  <mssgle:LineSegment
-                    End="-11,69" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-11,69"
-                    Point2="-15,69"
-                    Point3="-15,73" />
-                  <mssgle:LineSegment
-                    End="-15,130.5" />
+                    End="0,68" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Dim_Geolocation.Paths[Lookup No Match Output]"
+          TopLeft="613.5,335.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,126.75"
+              Start="0,0"
+              End="0,119.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,119.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-55.80638671875,53.8203125,111.6127734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Dim_Geolocation\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load Dim_Geolocation\OLE DB Destination">
     <Properties>
@@ -7289,6 +7552,37 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Dim_Geolocation\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Dim_Geolocation\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Geolocation]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -7352,9 +7646,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7392,7 +7684,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7402,7 +7694,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7415,51 +7707,51 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="123.2,41.6"
+          Size="123,42"
           Id="Package\Load Dim_Products\Union All"
           TopLeft="473,359" />
         <NodeLayout
-          Size="115.2,41.6"
+          Size="115,42"
           Id="Package\Load Dim_Products\Lookup"
           TopLeft="503,172" />
         <NodeLayout
-          Size="156.8,41.6"
+          Size="157,42"
           Id="Package\Load Dim_Products\OLE DB Source"
           TopLeft="521,63" />
         <NodeLayout
-          Size="158.4,41.6"
+          Size="158,42"
           Id="Package\Load Dim_Products\Derived Column"
           TopLeft="572,269" />
         <NodeLayout
-          Size="176.8,41.6"
+          Size="177,42"
           Id="Package\Load Dim_Products\OLE DB Destination"
-          TopLeft="501,496" />
+          TopLeft="501,495" />
         <EdgeLayout
           Id="Package\Load Dim_Products.Paths[Union All Output 1]"
           TopLeft="534.5,401">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55,95"
+              EndConnector="55,94"
               Start="0,0"
-              End="55,87.5">
+              End="55,86.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,43.5" />
+                    End="0,43" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,43.5"
-                    Point2="0,47.5"
-                    Point3="4,47.5" />
+                    Point1="0,43"
+                    Point2="0,47"
+                    Point3="4,47" />
                   <mssgle:LineSegment
-                    End="51,47.5" />
+                    End="51,47" />
                   <mssgle:CubicBezierSegment
-                    Point1="51,47.5"
-                    Point2="55,47.5"
-                    Point3="55,51.5" />
+                    Point1="51,47"
+                    Point2="55,47"
+                    Point3="55,51" />
                   <mssgle:LineSegment
-                    End="55,87.5" />
+                    End="55,86.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7631,11 +7923,34 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Dim_Products\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Category_Translation]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Load Dim_Sellers">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="157,42"
           Id="Package\Load Dim_Sellers\OLE DB Source"
@@ -7675,9 +7990,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7776,15 +8089,15 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="176.8,41.6"
+          Size="177,42"
           Id="Package\Load Fact_Payments\OLE DB Destination"
           TopLeft="536,416" />
         <NodeLayout
-          Size="115.2,41.6"
+          Size="115,42"
           Id="Package\Load Fact_Payments\Lookup"
           TopLeft="567,247" />
         <NodeLayout
-          Size="144.8,41.6"
+          Size="145,42"
           Id="Package\Load Fact_Payments\OLE DB Source"
           TopLeft="546,108" />
         <EdgeLayout
@@ -7886,7 +8199,7 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
     design-time-name="Package\Load Fact_Reviews">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157,42"
           Id="Package\Load Fact_Reviews\OLE DB Source"
@@ -7914,7 +8227,9 @@ WHERE  (CAST(review_creation_date AS DATETIME) &gt; ?)</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

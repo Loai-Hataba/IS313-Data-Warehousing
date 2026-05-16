@@ -4,17 +4,35 @@ Create Database Brazilian_DW
 
 USE Brazilian_DW
 
+
+
 USE master
 Drop database Brazilian_DW
 
 -- DIMENSIONS --
 drop table Dim_Customer
 
+delete from dim_customer
+
+select * from dim_orders
+
+delete * from dim_
+
+select * from dim_customer
+
+
+
+
+select * from dim_customer where customer_id = 'fadbb3709178fc513abc1b2670aa1ad2'
+select * from dim_customer where effective_end_date is not null
+
+update dim_customer set customer_city = 'giza' where customer_id = '00012a2ce6f8dcda20d059ce98491703'
 
 
 CREATE TABLE Dim_Customer (
+    customer_sk              INT Identity(1,1) NOT NULL Primary key,
     customer_unique_id       NVARCHAR(50),
-    customer_id              NVARCHAR(50) PRIMARY KEY,
+    customer_id              NVARCHAR(50),
     customer_zip_code_prefix NVARCHAR(5),
     customer_city            NVARCHAR(100),
     customer_state           NVARCHAR(2),
@@ -22,6 +40,11 @@ CREATE TABLE Dim_Customer (
     effective_end_date       DATETIME      NULL,              -- NULL = current/active record
     is_current               BIT           NOT NULL DEFAULT 1
 );
+
+-- Ensures only one active record per person at any time
+CREATE UNIQUE INDEX UX_Dim_Customer_Current
+    ON Dim_Customer (customer_id)
+    WHERE is_current = 1;
 
 -- NOTE: zip_code_prefix has duplicates in the source CSV so it cannot be a simple PK.
 -- A surrogate key is used as PK. In SSIS, deduplicate by zip_code_prefix (GROUP BY, take MIN lat/lng)
@@ -37,14 +60,14 @@ CREATE TABLE Dim_Geolocation (
 
 CREATE TABLE Dim_Orders (
     order_id                      NVARCHAR(50) PRIMARY KEY,
-    customer_id_fk                NVARCHAR(50),                         -- stores orders.customer_id; FK to Dim_Customer.customer_id
+    customer_sk_fk                INT,                        
     order_status                  NVARCHAR(20),
     order_purchase_timestamp      DATETIME,
     order_approved_at             DATETIME,
     order_delivered_carrier_date  DATETIME,
     order_delivered_customer_date DATETIME,
     order_estimated_delivery_date DATETIME,
-    CONSTRAINT fk_customer FOREIGN KEY (customer_id_fk) REFERENCES Dim_Customer(customer_id)
+    CONSTRAINT fk_customer FOREIGN KEY (customer_sk_fk) REFERENCES Dim_Customer(customer_sk)
 );
 
 CREATE TABLE Dim_Category_Translation (
@@ -150,5 +173,8 @@ DELETE FROM Fact_Reviews;
 DELETE FROM Dim_Orders;
 DELETE FROM Dim_Customer;
 UPDATE ETL_Control SET last_load_timestamp = '1900-01-01';
+
 select * from Fact_Order_Items
 select * from Dim_customer
+
+SELECT customer_sk , customer_id FROM Dim_Customer WHERE is_current = 1
